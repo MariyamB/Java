@@ -1,0 +1,22 @@
+package com.maria.rajeev;
+
+public class charCountNoHash {
+	public static void main(String[] args){
+		String word = "Prespecialized"; 
+		System.out.println(encode(word));
+		
+	}
+
+	static String encode(String word){
+		char[] str = word.toCharArray();
+		char[] newword="";
+		int count=0;
+		for(int i=0;i<str.length;i++){
+			if(newword[i]==str[i])
+			{
+				count++;
+			}
+		}
+		return word;
+	}
+}

@@ -1,0 +1,28 @@
+package com.maria.rajeev;
+
+//Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
+public class IsUniqueChars {
+	
+public static void main(String[] args)
+{
+	IsUniqueChars i= new IsUniqueChars();
+   System.out.println(i.checkForUnique("Bony"));
+   
+
+}
+public static boolean checkForUnique(String str){
+    boolean containsUnique = false;
+
+    for(char c : str.toCharArray()){
+        if(str.indexOf(c) == str.lastIndexOf(c)){
+            containsUnique = true;
+        } else {
+            containsUnique = false;
+        }
+    }
+
+    return containsUnique;
+}
+}
+
+

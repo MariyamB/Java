@@ -1,0 +1,29 @@
+package com.maria.rajeev;
+
+import java.util.ArrayList;
+
+public class charCountNoHash {
+	public static void main(String[] args) {
+		String word = "Mariyamm";
+		System.out.println(encode(word));
+
+	}
+
+	static char[] encode(String word) {
+		char[] str = word.toCharArray();
+		char[] word1=new char[10];
+		for(int i=0;i<=str.length;i++)
+		{
+		for(int j=i+1;j<str.length;j++)
+		{
+			if(str[i]==str[j])
+			{
+				word1[i]=str[i];
+			}
+		}
+
+	}
+		return  word1;
+}
+}
+

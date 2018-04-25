@@ -1,0 +1,24 @@
+package com.maria.rajeev;
+
+import java.util.Arrays;
+
+public class JadenCase {
+	public static void main(String[] args)
+	{
+		
+		String phrase1="most trees are blue";
+		System.out.println(toJadenCase(phrase1));
+	}
+
+	public static String toJadenCase(String phrase) {
+		String str=" ";
+		String[] a=phrase.split(" ");
+		for(int i=0;i<a.length;i++)
+		{
+			str=Arrays.toString(a).toUpperCase();
+		}
+
+		return str;
+	}
+
+}

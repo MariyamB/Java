@@ -1,0 +1,32 @@
+package com.maria.rajeev;
+
+public class Kata {
+	public static void main(String args[]) {
+		int a[] = { -8505, -5130, 1926, -9026 };
+		System.out.println(findEvenIndex(a));
+	}
+	public static int findEvenIndex(int[] arr) {
+		int sum1 = 0, sum2 = 0, ret = 0, sum3 = 0;
+		int n=arr.length;
+		ret = 0;
+		sum1 = 0;
+		for (int i = 1; i < n; i++) {
+			sum2 = arr[i] + sum2;
+		}
+		while (sum1 != sum2) {
+			for (int i = 1; i < n; i++) {
+				if (sum1 != sum2 && ret!=n-1) {
+					ret = i;
+					sum1 = sum1 + arr[i - 1];
+					sum2 = 0;
+					sum3 = 0;
+					for (int j = i + 1; j < n; j++) {
+						sum2 = sum3 + arr[j];
+						sum3 = sum2;
+					}
+				}
+			}
+		}
+		return ret;
+	}
+}

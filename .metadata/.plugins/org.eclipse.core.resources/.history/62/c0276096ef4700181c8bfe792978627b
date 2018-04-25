@@ -1,0 +1,24 @@
+package com.maria.rajeev;
+
+import java.util.Arrays;
+
+public class JadenCase {
+	public static void main(String[] args)
+	{
+		
+		String phrase1="most trees are blue";
+		System.out.println(toJadenCase(phrase1));
+	}
+
+	public static String toJadenCase(String phrase) {
+		String[] result = phrase.split("\\s");
+		String str=" ";
+		System.out.print(result);
+//		for(int i=0;i< result.length;i++)
+//		{
+			
+//		}
+		return Arrays.toString(result);
+	}
+
+}

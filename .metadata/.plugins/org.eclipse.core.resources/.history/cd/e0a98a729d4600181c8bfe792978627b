@@ -1,0 +1,25 @@
+package com.maria.rajeev;
+
+import java.util.ArrayList;
+
+public class charCountNoHash {
+	public static void main(String[] args) {
+		String word = "Prespecialized";
+		System.out.println(encode(word));
+
+	}
+
+	static ArrayList<Integer> encode(String word) {
+		char[] str = word.toCharArray();
+		ArrayList<Integer> count = new ArrayList<Integer>();
+		int cnt=0;
+		for (int i = 0; i < str.length; i++) {
+				if (str[i] == str[i+1]) {
+					cnt++;
+					count.add(cnt);
+				} else
+					count.add(1);
+		}
+		return count;
+	}
+}

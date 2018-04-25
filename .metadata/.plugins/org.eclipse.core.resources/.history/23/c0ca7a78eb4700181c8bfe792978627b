@@ -1,0 +1,21 @@
+package com.maria.rajeev;
+
+public class JadenCase {
+	public static void main(String[] args)
+	{
+		String phrase1="most trees are blue";
+		System.out.println(toJadenCase(phrase1));
+	}
+
+	public static String toJadenCase(String phrase) {
+		String[] splited = phrase.split(" ");
+		String str=" ";
+		System.out.print(splited);
+		for(int i=0;i< splited.length;i++)
+		{
+			str=splited[i].toUpperCase();
+		}
+		return str;
+	}
+
+}

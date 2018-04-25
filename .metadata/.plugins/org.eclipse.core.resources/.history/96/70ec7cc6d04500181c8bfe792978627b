@@ -1,0 +1,19 @@
+package com.maria.rajeev;
+
+public class DRoot {
+	public static void main(String args[]){
+	      System.out.println(digital_root(942));
+	}
+	 public static int digital_root(int n) {
+		    int c=0;
+		    while(n!=0 && c<10){
+		    		int i=n%10;
+		    		int b=n/10;
+		    		c=c+i;
+		    		n=b; 
+		    }
+		    return c;
+		 }
+}
+
+
