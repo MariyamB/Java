@@ -3,8 +3,7 @@ package com.maria.rajeev;
 public class bitstoBytes {
 	public static void main(String[] args)
 	{
-		Integer i=-1234;
-		System.out.println(bits2bytes(1234));
+		System.out.println(bits2bytes(1234577));
 	}
 	
 	public static int bits2bytes(int a)
