@@ -3,7 +3,7 @@ package com.maria.rajeev;
 public class Kata {
 
 	public static void main(String args[]) {
-		int a[] = { 4, 5, 6, 7, 8, 9, 10, 9, 8, 7, 6, 5, 4 };
+		int a[] = {-1,-1,0,1,1,0};
 		System.out.println(findEvenIndex(a));
 	}
 
@@ -12,6 +12,8 @@ public class Kata {
 		ret = 0;
 		sum1 = 0;
 		int len = 1;
+		if(arr.length!=0)
+		{
 		for (int i = 1; i < arr.length; i++) {
 			sum2 = arr[i] + sum2;
 		}
@@ -32,6 +34,12 @@ public class Kata {
 				}
 			}
 		}
+		}
+		else
+		{
+			return ret = -1;
+		}
 		return ret;
 	}
 }
+

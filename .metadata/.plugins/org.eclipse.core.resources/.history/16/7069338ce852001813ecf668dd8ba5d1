@@ -1,0 +1,30 @@
+package com.maria.rajeev;
+
+import java.util.Arrays;
+
+public class arrayLargestTwiceAsLarge {
+	public static void main(String args[]) {
+		int a[] = { 3, 6, 1, 0 };
+		System.out.println("The index of the largest array element which is atleast twice greater than other elements is :"+dominantIndex(a));
+	}
+
+	public static int dominantIndex(int[] nums) {
+		int k = 0;
+		int ret = 0;
+
+
+		for (int i = 0; i < nums.length; i++) {
+			for (int j = i+1; j < nums.length; j++) {
+				if(nums[j] == 2 * nums[i])
+				{
+					ret=j;
+					break;
+				}
+
+			}
+
+		}
+      return ret;
+	}
+
+}

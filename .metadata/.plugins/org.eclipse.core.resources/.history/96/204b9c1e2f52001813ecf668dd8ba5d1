@@ -1,0 +1,14 @@
+package com.maria.rajeev;
+
+public class datatypes {
+	public static void main(String[] argh) {
+	System.out.println("Minimum value of Integer is: " + Integer.MIN_VALUE);
+	System.out.println("Maximum value of Integer is: " + Integer.MAX_VALUE);
+	System.out.println("Minimum value of Integer is: " + Long.MIN_VALUE);
+	System.out.println("Maximum value of Integer is: " + Long.MAX_VALUE);
+	System.out.println("Minimum value of Integer is: " + Short.MIN_VALUE);
+	System.out.println("Maximum value of Integer is: " + Short.MAX_VALUE);
+	System.out.println("Minimum value of Integer is: " + Byte.MIN_VALUE);
+	System.out.println("Maximum value of Integer is: " + Byte.MAX_VALUE);
+	}
+}

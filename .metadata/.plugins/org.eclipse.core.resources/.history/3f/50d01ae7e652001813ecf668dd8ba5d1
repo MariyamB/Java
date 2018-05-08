@@ -1,0 +1,42 @@
+package com.maria.rajeev;
+
+import java.util.Arrays;
+
+public class arrayLargestTwiceAsLarge {
+	public static void main(String args[]) {
+		int a[] = { 3, 6, 1, 0 };
+		System.out.println(dominantIndex(a));
+	}
+
+	public static int dominantIndex(int[] nums) {
+		int k = 0;
+		int ret = 0;
+//		for (int i = 0; i < nums.length; i++) {
+//			for (int j = i; j < nums.length; j++) {
+//				if (nums[i] < nums[j]) {
+//					k = nums[j];
+//					nums[j] = nums[i];
+//					nums[i] = k;
+//
+//				}
+//
+//			}
+//
+//		}
+
+		for (int i = 0; i < nums.length; i++) {
+			for (int j = i+1; j < nums.length; j++) {
+				if(nums[i] == 2 * nums[j])
+				{
+					ret=i;
+				}
+				else 
+					ret=-1;
+
+			}
+
+		}
+      return ret;
+	}
+
+}
